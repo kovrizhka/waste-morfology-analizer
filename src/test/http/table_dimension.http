@@ -1,0 +1,35 @@
+POST http://localhost:8080/table/dimension/add
+Content-Type: application/json
+
+{
+  "totalWeight": 199,
+  "totalVolume": 2,
+  "district": "Академ",
+  "scrap": {
+    "weight": 0.123,
+    "volume": 96.0
+  },
+  "alumA30": {
+    "weight": 3.4,
+    "volume": 1.4
+  },
+  "paper": {
+    "weight": 0.4,
+    "volume": 1.4
+  },
+  "clearGlass": {
+  }
+}
+###
+
+
+GET http://localhost:8080/table/dimension/get/6
+Content-Type: application/json
+###
+
+DELETE http://localhost:8080/table/dimension/delete/0
+Content-Type: application/json
+###
+
+GET http://localhost:8080/table/dimension/getAll
+Content-Type: application/json
